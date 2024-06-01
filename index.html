@@ -2,37 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Arithmetic Task Performance </title> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <div class="form">
-            <div class="inputBox">
-                <input type="number" id="an" required="required">
-                <span> AN </span>
-             </div>
-            <div class="inputBox">
-                <input type="number" id="a1" required="required">
-                <span> FIRST TERM </span>
-             </div>
-             <div class="inputBox">
-                 <input type="number" id="n" required="required">
-                 <span> NTH TERM </span>
-              </div>
-              <div class="inputBox">
-                <input type="number" id="d" required="required">
-                <span> COMMON DIFFERENCE </span>
-             </div>
-              <a href="#" onclick="ryanwagkangsusuko()">
-                <span>SUBMIT</span>     
-            </a>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="manhwas.html">Manhwa</a>
+            <a href="manhwas.html#recommended-section">Recommended</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
         </div>
-    </div>
-    <p id="result"></p>
-    <script src="script.js"></script>
+    </header>
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('img/undercover-professor.png') no-repeat;">
+                        <div class="content">
+                            <h3>Undercover Professor</h3>
+                            <p>I became a professor in the best academy of the Empire because I… was mistaken for someone else. I’m in a situation where I can’t get caught by either side. I wonder where this dangerous tight-rope walking situation will lead me to?</p>
+                            <a href="/manhwas/undercover-professor/html/undercover-professor.html" class="btn">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url('img/nebula-civilization.png') no-repeat;">
+                        <div class="content">
+                            <h3>The Nebula’s Civilization</h3>
+                            <p>Choi Sungwoon successfully completed all of the achievements in the game, “Perished World,” as the No. 1 player in the game’s rankings.After a brief moment of joy due to his achievement, Sungwoon receives a suspicious email and is summoned to a real version of “Perished World,” starting his race to becoming a “god”.</p>
+                            <a href="/manhwas/the-nebulla-civilization/html/the-nebullas-civilization.html" class="btn">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('img/dungeon-odyssey.png') no-repeat;">
+                        <div class="content">
+                            <h3>Dungeon Odyssey</h3>
+                            <p>The descendants of mankind, born in the labyrinth and raised on the milk of monsters, possessed special strength and strong bodies. When they returned to earth, mankind referred to them as dungeon babies. Among them, Kim Jinwoo was born in the deepest labyrinth. “I never tried to become strong, I just wanted to live.”From the lowliest excavator to the king of the labyrinth, his life story is now unfolding.<br>
+                            depression</p>
+                            <a href="/manhwas/dungeon-odyssey/html/dungeon-odyssey.html" class="btn">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('img/Novel-extra.png') no-repeat;">
+                        <div class="content">
+                            <h3>The Novel's Extra</h3>
+                            <p>Billions of characters exist inside the single world of a novel.
+                                However, no one aside from the heroines and ‘important supporting characters’ receives a name.
+                                “Chundong, what is your standing?”
+                                I don’t know. I don’t even know why my name is Chundong.
+                                This world is a novel I wrote.
+                                However, I ended up as a character I’d never even written about.
+                                Other than getting accepted into the Agent Military Academy, this character isn’t particularly extraordinary, has no interactions with anyone in the novel, and isn’t even mentioned at all.
+                                Therefore, I became an extra in the novel.
+                                …No. I became dust on the novel.</p>
+                            <a href="/manhwas/the-novels-extra/html/the-novels-extra.html" class="btn">Read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url('img/infinite-mage.png') no-repeat;">
+                        <div class="content">
+                            <h3>Infinite Mage</h3>
+                            <p>Abandoned at birth in a stable, Shirone was raised by commoners.=
+                                As a child, he had gifted Insight and had learned how to read. After visiting the city, he finally saw the workings of magic, which he was immensely curious about.
+                                This inspired Shirone’s dream of becoming a mage. However, the city was a place with a cruel and rigid social hierarchy. Here, Shirone discovered the hidden side of the world before he even reached adulthood…
+                                Will Shirone be able to achieve his dream of becoming a mage in this twisted world?</p>
+                            <a href="/manhwas/infinite-mage/html/infinite-mage.html" class="btn">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-<!-- CREATED BY RYAN :> -->

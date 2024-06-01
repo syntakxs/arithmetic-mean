@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhwas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="includeHTML()" class="manhwas-page">
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="manhwas.html">Manhwa</a>
+            <a href="#recommended-section" class="scroll-to-section">Recommended</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+    </header>
+
+    <section class="genres">
+        <h2> / GENRES <i class="arrow down" id="toggle-genres"></i></h2>
+        <div id="genre-container" class="genre-container hidden">
+            <ul id="genre-list">
+                <li><a href="#">Manga</a></li>
+                <li><a href="#">Manhua</a></li>
+                <li><a href="#">Manhwa</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="all-manhwas">
+        <h1>All Manhwas</h1>
+        <div class="manhwa-container" id="initial-manhwas">
+            <div class="manhwa">
+                <img src="/img/nebula-recommended.png" alt="Recommended Manhwa 1">
+                <h3>The Nebulla's Civilization</h3>
+                <a href="/manhwas/the-nebulla-civilization/html/the-nebullas-civilization.html" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="/img/dungeon-odyssey.-recommended.jpg" alt="Recommended Manhwa 2">
+                <h3>Dungeon Odyssey</h3>
+                <a href="/manhwas/dungeon-odyssey/html/dungeon-odyssey.html" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="/img/undercover-professor-recommended.png" alt="Recommended Manhwa 3">
+                <h3>Undercover Professor</h3>
+                <a href="/manhwas/undercover-professor/html/undercover-professor.html" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="/img/the-novel-extra.webp" alt="Recommended Manhwa 3">
+                <h3>The Novel's Extra</h3>
+                <a href="/manhwas/the-novels-extra/html/the-novels-extra.html" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="/img/infinite-mage-recommended.png" alt="Recommended Manhwa 3">
+                <h3>Infinite Mage</h3>
+                <a href="/manhwas/infinite-mage/html/infinite-mage.html" class="btn">Read</a>
+            </div>
+            <!-- Add more initial manhwa items as needed -->
+        </div>
+        <button class="btn see-more" onclick="showMore('more-manhwas')">See More</button>
+        <div class="manhwa-container hidden" id="more-manhwas">
+            <div class="manhwa">
+                <img src="img/manhwa1.gif" alt="Manhwa 1">
+                <h3>Extra Manhwa 1</h3>
+                <a href="#" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="img/manhwa2.png" alt="Manhwa 2">
+                <h3>Extra Manhwa 2</h3>
+                <a href="#" class="btn">Read</a>
+            </div>
+            <div class="manhwa">
+                <img src="img/manhwa3.png" alt="Manhwa 3">
+                <h3>Extra Manhwa 3</h3>
+                <a href="#" class="btn">Read</a>
+            </div>
+            <!-- Add more additional manhwa items as needed -->
+        </div>
+    </section>
+
+    <div include-html="recommended-manhwas.html"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
