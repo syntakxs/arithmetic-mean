@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+  }
+  .box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .box::before
+  {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+  .box::after
+  {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  @keyframes animate
+  {
+    0%
+    {
+  transform: rotate(0deg);
+    }
+    100% 
+    {
+      transform: rotate(360deg);
+    }
+  }
+  .form{
+    position: absolute;
+    inset: 2px;
+    background: #1d2b3a;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 130px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputBox {
+    position: relative;
+    width: 250px;
+    
+  }
+  .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+  }
+  .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span
+  {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+  }
+  .inputBox:nth-child(3) input:valid ~ span,
+  .inputBox:nth-child(3) input:focus ~ span
+  {
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span
+{
+  border: 1px solid #00dfc4;
+}
+.form a {
+    position: relative;
+    display: inline-block;
+    padding: 25px 90px;
+    color: #03e9f4;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 6px;
+}
+.form a span{
+  position: justify;
+  display: block;
+}
+.form a:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+/* <!-- CREATED BY RYAN :> --> */
